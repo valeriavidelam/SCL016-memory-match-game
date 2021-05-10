@@ -2,11 +2,80 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Memory Match</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Pokemon MEMORY MATCH</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+  </head> 
+
+
   <body>
-    <div id="root"></div>
+    <!-- <div id="root"></div> -->
+    <header>
+        <img src="./assets/images/logo.png" alt="logo" class="logo">
+    </header>
+
+
+    <div class="row"> <!-- Bloque -->
+        <aside class="col-2"> <!-- Elemento-->
+            <div class="home-box home-button logo-text-home"> <!-- acá falta agregar la funcion de botón para q lleve al home!-->
+                <p>HOME</p>
+            </div>
+            <div class="stats-box games-played-heading">
+                <p>GAMES PLAYED</p>
+            </div>
+            <div class="number-box games-played-num">
+                <p id="games-played-number">0</p>
+            </div>
+            <div class="stats-box attempts-heading">
+                <p>ATTEMPTS</p>
+            </div>
+            <div class="number-box attempts-num">
+                <p id="attempts-number">0</p>
+            </div>
+            <div class="stats-box accuracy-heading">
+                <p>ACCURACY</p>
+            </div>
+            <div class="number-box accuracy-num">
+                <p id="accuracy-number">0%</p>
+            </div>
+            <div class="audio-box">
+                <audio class="audio-controls" controls>
+                    <source src="assets/audio/PokemonGym.mp3" type="audio/mpeg" >
+                </audio>
+            </div>
+        </aside>
+
+    <main id="cardContainer" class="col-10"></main>
+        
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./assets/images/card_back.png" alt="card_back" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <img src="data/pokemon/pokemon.js">
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+    
+
+  
+    
+        
+        
+        <!--<div id="cardContainer" class="card-container"></div>-->
+    </main>
+    
+  
+    
+          
+
     <script src="main.js" type="module"></script>
   </body>
 </html>
