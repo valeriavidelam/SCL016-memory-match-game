@@ -1,81 +1,173 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Pokemon MEMORY MATCH</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/grid.css">
-  </head> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Ghibli Memory Match</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
 
+    <body>       
+        <img src="assets/images/ghiblilogo.png" alt="Logo" class="logo">
+        <div class="overlay-text visible">
+            CLICK TO START
+        </div>
+        <div id="game-over-text" class="overlay-text">
+            You've Lose!
+            <span class="overlay-text-small"> CLICK TO RESTART</span>
+        </div>
+        <div id="victory-text" class="overlay-text">
+            You WIN!
+            <span class="overlay-text-small"> CLICK TO RESTART</span>
+        </div>
+        <div class="game-container">
+                <div class="game-info-container">
+                    <div class="game-info">
+                        TIME <span id="time-remaining">100</span>
+                    </div>
+                    <div class="game-info">
+                        FLIPS <span id="flips">0</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class= "cback" src="assets/images/card-back.png">
+                    </div>
+                    <div class= "card-front card-face">
+                        <img class= "card-value" src="assets/images/c-front/cf01.png"> 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class= "cback" src="assets/images/card-back.png">
+                    </div>
+                    <div class= "card-front card-face">
+                        <img class= "card-value" src="assets/images/c-front/cf02.png"> 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class= "cback" src="assets/images/card-back.png">
+                    </div>
+                    <div class= "card-front card-face">
+                        <img class= "card-value" src="assets/images/c-front/cf01.png"> 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class= "cback" src="assets/images/card-back.png">
+                    </div>
+                    <div class= "card-front card-face">
+                        <img class= "card-value" src="assets/images/c-front/cf02.png"> 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class= "cback" src="assets/images/card-back.png">
+                    </div>
+                    <div class= "card-front card-face">
+                        <img class= "card-value" src="assets/images/c-front/cf03.png"> 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class= "cback" src="assets/images/card-back.png">
+                    </div>
+                    <div class= "card-front card-face">
+                        <img class= "card-value" src="assets/images/c-front/cf04-2.png"> 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class= "cback" src="assets/images/card-back.png">
+                    </div>
+                    <div class= "card-front card-face">
+                        <img class= "card-value" src="assets/images/c-front/cf03.png"> 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class= "cback" src="assets/images/card-back.png">
+                    </div>
+                    <div class= "card-front card-face">
+                        <img class= "card-value" src="assets/images/c-front/cf04-2.png"> 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class= "cback" src="assets/images/card-back.png">
+                    </div>
+                    <div class= "card-front card-face">
+                        <img class= "card-value" src="assets/images/c-front/cf05.png"> 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class= "cback" src="assets/images/card-back.png">
+                    </div>
+                    <div class= "card-front card-face">
+                        <img class= "card-value" src="assets/images/c-front/cf06.png"> 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class= "cback" src="assets/images/card-back.png">
+                    </div>
+                    <div class= "card-front card-face">
+                        <img class= "card-value" src="assets/images/c-front/cf05.png"> 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class= "cback" src="assets/images/card-back.png">
+                    </div>
+                    <div class= "card-front card-face">
+                        <img class= "card-value" src="assets/images/c-front/cf06.png"> 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class= "cback" src="assets/images/card-back.png">
+                    </div>
+                    <div class= "card-front card-face">
+                        <img class= "card-value" src="assets/images/c-front/cf07.png"> 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class= "cback" src="assets/images/card-back.png">
+                    </div>
+                    <div class= "card-front card-face">
+                        <img class= "card-value" src="assets/images/c-front/cf08.png"> 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class= "cback" src="assets/images/card-back.png">
+                    </div>
+                    <div class= "card-front card-face">
+                        <img class= "card-value" src="assets/images/c-front/cf08.png"> 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class= "cback" src="assets/images/card-back.png">
+                    </div>
+                    <div class= "card-front card-face">
+                        <img class= "card-value" src="assets/images/c-front/cf07.png"> 
+                    </div>
+                </div>
 
-  <body>
-    <!-- <div id="root"></div> -->
-    <header>
-        <img src="./assets/images/logo.png" alt="logo" class="logo">
-    </header>
-
-
-    <div class="row"> <!-- Bloque -->
-        <aside class="col-2"> <!-- Elemento-->
-            <div class="home-box home-button logo-text-home"> <!-- acá falta agregar la funcion de botón para q lleve al home!-->
-                <p>HOME</p>
-            </div>
-            <div class="stats-box games-played-heading">
-                <p>GAMES PLAYED</p>
-            </div>
-            <div class="number-box games-played-num">
-                <p id="games-played-number">0</p>
-            </div>
-            <div class="stats-box attempts-heading">
-                <p>ATTEMPTS</p>
-            </div>
-            <div class="number-box attempts-num">
-                <p id="attempts-number">0</p>
-            </div>
-            <div class="stats-box accuracy-heading">
-                <p>ACCURACY</p>
-            </div>
-            <div class="number-box accuracy-num">
-                <p id="accuracy-number">0%</p>
-            </div>
-            <div class="audio-box">
-                <audio class="audio-controls" controls>
-                    <source src="assets/audio/PokemonGym.mp3" type="audio/mpeg" >
-                </audio>
-            </div>
-        </aside>
-
-    <main id="cardContainer" class="col-10"></main>
-        
-        <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="./assets/images/card_back.png" alt="card_back" style="width:300px;height:300px;">
-              </div>
-              <div class="flip-card-back">
-                <img src="data/pokemon/pokemon.js">
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-    
-
-  
-    
-        
-        
-        <!--<div id="cardContainer" class="card-container"></div>-->
-    </main>
-    
-  
-    
-          
-
-    <script src="main.js" type="module"></script>
-  </body>
+            
+        </div>
+    </section>  
+    <div class="audio-box">
+        <audio class="audio-controls" controls autoplay loop>
+            <source src="assets/audio/Ghibli-01.mp3" type="audio/mpeg" >
+        </audio>
+    </div> 
+    <footer>
+       
+      </footer>
+    </body>
 </html>

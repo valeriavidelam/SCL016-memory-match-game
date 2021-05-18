@@ -1,8 +1,15 @@
 //Import data from .js file
 import pokemon from '../data/pokemon/pokemon.js'; 
-//console.log(pokemon);
 
-// array to show the pokemon in items 
+const App = () => {
+  const initContent = document.createElement('div');
+  initContent.className = 'App';
+
+    
+  return App;
+}
+
+// I create an array to show the pokemon in items 
 const items = pokemon.items;  
 //console.log(items);
 //expected output: 9
@@ -21,22 +28,6 @@ console.log(allItems);
 shuffle(allItems);
 //console.log(shuffle);
 
-const pokemonContainer = document.getElementById('cardContainer');
-export let showPokemon = (allItems) => {
-  let dataPokemon = '';
-  allItems.map((obj) => {
-    dataPokemon += `   <div class = "pokemonCard">
-    <div class = "internalCard">
-    <img src='${obj.image}' alt = "Image" class="imagePokemon"/>
-    </div>
-    </div>
-    `
-  });
-// return the new array with the data
- return dataPokemon; 
-}
-// show the data in the Html with the Div that I create before.
-  pokemonContainer.innerHTML = showPokemon(allItems); 
 
 //Trying to randomize the order of the game
 function shuffle(allItems) {
@@ -55,16 +46,36 @@ function shuffle(allItems) {
 }
 
 return allItems;
-}  
-
-const App = () => {
-  const el = document.createElement('div');
-  el.className = 'App';
+}
 
 
+//save shuffle function in a new grid
+let newGrid = shuffle (allItems)
 
+//En el 63 va <div class="flip-card-inner">
+const pokemonContainer = document.getElementById('gameCards');
+export let showPokemon = (newGrid) => {
+  let dataPokemon = '';
+  newGrid.map((obj) => {
+    dataPokemon += `<div class="pokemonCard">
+    <div class ="internalCard">
+    <div class="flip-card">
     
-  return el;
-};
+    <div class="flip-card-front">
+    </div>
+    <div class="flip-card-back">
+    <img src='${obj.image}' alt = "Image" class="imagePokemon"/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    `
+  });
+// return the new array with the data
+ return dataPokemon; 
+}
+// show the data in the Html with the Div that I create before.
+  pokemonContainer.innerHTML = showPokemon(newGrid); 
 
-export default App;
+export default App

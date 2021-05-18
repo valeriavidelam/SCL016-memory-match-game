@@ -1,42 +1,62 @@
-import App from './components/App.js';
+import { picture } from './components/Cards.js';
 
-document.getElementById('root').appendChild(App());
+import ghibli from './data/ghibli.js';
 
-var gameCardsContainer = document.querySelector('#gameCards');
-var resetButton = document.querySelector('#reset-button');
-var modal = document.querySelector('.modal-container');
-var modalText = document.querySelector('.modal-text');
+picture();
+console.log(ghibli);
 
-var firstCardClicked = null;
-var secondCardClicked = null;
-var firstCardClasses = null;
-var secondCardClasses = null;
+const App = () => {
+    const initContent = document.createElement('div');
+    initContent.className = 'App';
+  
+      
+    return App;
+  }
+//I create the array with the 8 cards
+let dataGhibli = ghibli.items;
 
-var maxMatches = 9;
-var matches = 0;
+// then, I duplicate the cards to create the partner
+const gameGrid = dataGhibli.concat(dataGhibli);
+console.log(dataGhibli);
 
-var attempts = 0;
-var gamesPlayed = 0;
+// Declare the variable to randomize the cards
+//Declare the random position to appear the card
+let j = 0
+let temp = null
 
-// Dynamic Card Shuffle
+// With fisher-Yates algorithm I'm trying to randomize
+function shuffle(gameGrid) {
+    for (let i = gameGrid.length -1; i > 0; i -= 1) {
+        j = Math.floor(Math.random() * (i + 1))
+        temp = gameGrid[i]
+        gameGrid[i] = gameGrid[j]
+        gameGrid[j] = temp
+    }
+    return gameGrid;
+}
 
-var cardFrontDeck = [
-    'card-front-1',
-    'card-front-2',
-    'card-front-3',
-    'card-front-4',
-    'card-front-5',
-    'card-front-6',
-    'card-front-7',
-    'card-front-8',
-    'card-front-9',
-    'card-front-1',
-    'card-front-2',
-    'card-front-3',
-    'card-front-4',
-    'card-front-5',
-    'card-front-6',
-    'card-front-7',
-    'card-front-8',
-    'card-front-9'
-]
+let newGrid = shuffle(gameGrid)
+
+const ghibliContainer = document.getElementById('gameCards');
+export let showGhibli = (newGrid) => {
+  let dataGhibli = '';
+  newGrid.map((obj) => {
+    dataGhibli += `<div class="ghibliCards">
+    <div class ="internalCard">
+    
+    <div class="card-front">
+    <img src='${obj.image}' alt = "Image" class="imageGhibli"/>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    `
+  });
+// return the new array with the data
+ return dataGhibli; 
+}
+// show the data in the Html with the Div that I create before.
+  ghibliContainer.innerHTML = showGhibli(newGrid); 
+
+export default App
