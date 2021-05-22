@@ -26,7 +26,7 @@ Puedes probar el juego en https://valeriavidelam.github.io/SCL016-memory-match-g
 
 ## 3. Preview
 
- <a src="./src/assets/images/readme/memorymatchpreview.gif" alt="Preview" class="Preview"/>
+ <img src="./src/assets/images/readme/memorymatchpreview.gif" alt="Preview" class="Preview">
 
 
 ## 4. Definición del producto
@@ -37,7 +37,7 @@ Está pensando en inglés de manera de hacerlo más universal; de igual manera n
 La modalidad de juego consta en iniciar la página, hacer click al botón "Click to start", el que te llevará a una página donde aparecen 16 cartas y una música alusiva a alguna película de Ghibli te invita a jugar. El jugador deberá hacer click a cada carta hasta lograr hacer match en un tiempo establecido de 50 segundos.
 Al ser un prototipo inicial básico, el juego solo consta de una partida, sin niveles de dificultad ni incrementación o disminución de tiempo, ya que como bien se menciona al inicio, está pensado para ser un juego rápido de paso que puedes repetir cuantas veces quieras al día mientras esperas que cargue una página, o que te atiendan en algún lugar.
 
-## 5. Historias de usuario/Features
+## 5. Historias de usuario/FEATURES
 
 Se realizó una encuesta a personas que integraran el grupo etario clasificado como público objetivo, definiendo así las historias de usuario para dar inicio al prototipo y creación del proyecto.
 
@@ -90,8 +90,8 @@ FEAUTRES: User can listen ghibli's soundtrack while their play the game. / El us
 
 - Versión Móvil
 
-<img src="./src/assets/images/readme/Cel1.JPG" alt="Versión-final-movil"/> 
-<img src="./src/assets/images/readme/Cel2.JPG" alt="Versión-final-movil"/>
+<img src="./src/assets/images/readme/movil.JPG" alt="Versión-final-movil"/> 
+
 
 
 ## 7. Test de usabilidad
