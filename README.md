@@ -26,7 +26,7 @@ Puedes probar el juego en https://valeriavidelam.github.io/SCL016-memory-match-g
 
 ## 3. Preview
 
- <a src="assets/images/memorymatchpreview.gif" alt="Preview" class="Preview">
+ <a src="./src/assets/images/readme/memorymatchpreview.gif" alt="Preview" class="Preview"/>
 
 
 ## 4. Definición del producto
@@ -73,27 +73,27 @@ FEAUTRES: User can listen ghibli's soundtrack while their play the game. / El us
 
 ### Diseño de baja fidelidad
 
-<img src="./images/readme/prototipo1.jpg" alt="Prototipo-baja-fidelidad"/>
+<img src="./src/assets/images/readme/prototipo1.jpg" alt="Prototipo-baja-fidelidad"/>
 
 ### Diseño de alta fidelidad
 
-<img src="./images/readme/Figma1.png" alt="Prototipo-alta-fidelidad"/>
-<img src="./images/readme/Figma2.png" alt="Prototipo-alta-fidelidad"/>
+<img src="./src/assets/images/readme/Figma1.png" alt="Prototipo-alta-fidelidad"/>
+<img src="./src/assets/images/readme/Figma2.png" alt="Prototipo-alta-fidelidad"/>
 
 <a href="https://www.figma.com/proto/Xv0RGO1ZEFsL9VgDukciNR/Untitled?node-id=23%3A2&scaling=min-zoom&page-id=0%3A1" rel="nofollow">Click aquí para ver el prototipo completo.</a>
 
 ### Diseño final
 
 - Versión Desktop
-<img src="./images/readme/desktop1.png" alt="Versión-final-desktop"/> 
-<img src="./images/readme/desktop2.png" alt="Versión-final-desktop"/>
+<img src="./src/assets/images/readme/desktop1.png" alt="Versión-final-desktop"/> 
+<img src="./src/assets/images/readme/desktop2.png" alt="Versión-final-desktop"/>
 
 - Versión Móvil
 
-<img src="./images/readme/Cel1.JPG" alt="Versión-final-movil"/> 
-<img src="./images/readme/Cel2.JPG" alt="Versión-final-movil"/>
+<img src="./src/assets/images/readme/Cel1.JPG" alt="Versión-final-movil"/> 
+<img src="./src/assets/images/readme/Cel2.JPG" alt="Versión-final-movil"/>
 
 
 ## 7. Test de usabilidad
 
-<img src="assets/images/readme/Testdeusabilidad.png" alt="Test-de-usabilidad" class="Test-de-usabilidad">
+<img src="./src/assets/images/readme/Testdeusabilidad.png" alt="Test-de-usabilidad" class="Test-de-usabilidad"/>
