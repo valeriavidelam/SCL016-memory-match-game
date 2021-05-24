@@ -135,6 +135,7 @@ class MixOrMatch {
     }
 }
 
+
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
@@ -153,6 +154,7 @@ function ready() {
    });
 }
 
+//Condition assigned for the list function to run when the page is loaded.
 if(document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', ready());
 } else {

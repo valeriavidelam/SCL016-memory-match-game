@@ -23,9 +23,9 @@ body {
 }
 
 .logo {
-    justify-content: space-around;
+    justify-content: center;
     position: center;
-    display: block;
+    display: flex;
     margin: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -51,9 +51,15 @@ body {
 }
 
 .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     position: relative;
-    height: 175px;
-    width: 125px;
+    height: 150px;
+    width: 100px;
+    justify-content: center;
+    
 }
 
 
@@ -71,7 +77,7 @@ body {
     border-width: 1px;
     border-style: solid;
     transition: transform 500ms ease-in-out;
-    /*-webkit-backface-visibility: hidden;*/
+    
 }
 
 .card.visible .card-back {
@@ -182,13 +188,67 @@ body {
     transform: translateY(0);
 }
 
-@media (max-width: 600px) {
+/*Tablet view*/
+@media only screen and (min-width: 431px) and (max-width: 769px) {
+
+    .logo {
+        justify-content: center;
+        position: center;
+        display: flex;
+        margin: auto;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
+      
     .game-container {
-      grid-template-columns: repeat(2, auto);
+      grid-template-columns: repeat(3, auto);
     }
   
     .game-info-container {
       flex-direction: column;
       align-items: center;
     }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+        height: 75px;
+        width: 50px;
+        justify-content: center;
+    }
+  }
+
+  /*Mobile view*/
+  @media only screen and (max-width: 430px) {
+
+    .logo {
+        justify-content: center;
+        position: center;
+        display: flex;
+        margin: auto;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+      }
+
+    .game-container {
+        grid-template-columns: repeat(3, auto);
+      }
+    
+      .game-info-container {
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .card {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          position: relative;
+          height: 55px;
+          width: 40px;
+          justify-content: center;
+      }
   }
