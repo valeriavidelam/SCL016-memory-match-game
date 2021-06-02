@@ -18,7 +18,7 @@
 - CSS
 - JavaScript
 - Github
-- Node.js 
+ 
 
 ## 2. Live Demo
 
